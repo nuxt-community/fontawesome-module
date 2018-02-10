@@ -1,6 +1,6 @@
 # Nuxt Font Awesome 5
-[![npm (scoped with tag)](https://img.shields.io/npm/v/nuxt-vue-material/latest.svg?style=flat-square)](https://npmjs.com/package/nuxt-fontawesome)
-[![npm](https://img.shields.io/npm/dt/nuxt-vue-material.svg?style=flat-square)](https://npmjs.com/package/nuxt-fontawesome)
+[![npm (scoped with tag)](https://img.shields.io/npm/v/nuxt-fontawesome/latest.svg?style=flat-square)](https://npmjs.com/package/nuxt-fontawesome)
+[![npm](https://img.shields.io/npm/dt/nuxt-fontawesome.svg?style=flat-square)](https://npmjs.com/package/nuxt-fontawesome)
 
 > Plugin to join nuxt and Font Awesome 5 icons using official [vue-fontawesome](https://github.com/FortAwesome/vue-fontawesome) plugin. 
 Supports ES6 imports with tree shaking and fix of initial load flickering
@@ -48,7 +48,7 @@ Also it may be needed to explicitly install fontawesome, if your webpack build f
   build: {
     extend (config) {
       config.resolve.alias['@fortawesome/fontawesome-pro-regular$'] = '@fortawesome/fontawesome-pro-regular/shakable.es.js'
-      config.resolve.alias['@fortawesome/fontawesome-free-solid'] = '@fortawesome/fontawesome-free-solid/shakable.es.js'
+      config.resolve.alias['@fortawesome/fontawesome-free-solid$'] = '@fortawesome/fontawesome-free-solid/shakable.es.js'
     }
   }
 }
