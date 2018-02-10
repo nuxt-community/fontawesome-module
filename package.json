@@ -1,0 +1,45 @@
+{
+  "name": "nuxt-fontawesome",
+  "version": "0.0.1",
+  "description": "Module to join nuxt and Fontawesome 5",
+  "keywords": [
+    "vue",
+    "nuxt",
+    "fontawesome",
+    "fontawesome 5"
+  ],
+  "license": "MIT",
+  "contributors": [
+    {
+      "name": "vaso2 <head@galley.online>"
+    }
+  ],
+  "main": "lib/module.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "lint": "eslint lib test"
+  },
+  "eslintIgnore": [
+    "lib/templates/*.*"
+  ],
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vaso2/nuxt-fontawesome.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vaso2/nuxt-fontawesome/issues"
+  },
+  "homepage": "https://github.com/vaso2/nuxt-fontawesome#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.3",
+    "@fortawesome/vue-fontawesome": "^0.0.22"
+  },
+  "devDependencies": {
+    "nuxt-module-builder": "latest"
+  }
+}
