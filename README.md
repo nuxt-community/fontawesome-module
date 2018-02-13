@@ -128,4 +128,4 @@ fontawesome: {
   </script>
 ```
 ## License
-MIT, made by [**Galley Web Development**](https://galley.online/)
+MIT, made by [Galley Web Development](https://galley.online/)
