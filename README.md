@@ -75,14 +75,14 @@ Please see [vue-fontawesome](https://github.com/FortAwesome/vue-fontawesome) for
 - Add configuration like this in `nuxt.config.js`
 ```js
 {
-  fontAwesome: {
-    packs: [
+  fontawesome: {
+    imports: [
         {
           set: '@fortawesome/fontawesome-pro-regular',
           icons: ['faAdjust']
         },
         {
-          package: '@fortawesome/fontawesome-free-solid'
+          set: '@fortawesome/fontawesome-free-solid'
         },
     ],
   },
