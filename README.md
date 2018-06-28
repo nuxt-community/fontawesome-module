@@ -65,7 +65,7 @@ Change component name. For example, `fa` to use like
 Import icons/whole sets from chosen packages
 - Default: `[]`, no icons will be imported here (see below, can be loaded later inside .vue file)
   - `set` - path to node package for import, like `@fortawesome/free-solid-svg-icons`
-  - `icons` - array of icons to import `['faAdjust', 'faArchive']`. If empty, whole set will be loaded
+  - `icons` - array of icons to import `['faAdjust', 'faArchive']`.
 
 
 ## Usage
