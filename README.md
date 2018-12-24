@@ -5,14 +5,6 @@
 > Plugin to join nuxt and Font Awesome 5 icons using official [vue-fontawesome](https://github.com/FortAwesome/vue-fontawesome) plugin. 
 Supports ES6 imports with tree shaking and fix of initial load flickering
 
-## 0.2 to 0.3 upgrade
-Updated due to release of fontawesome 5.1 with some breaking changes. Please refer to vue-fontawesome [UPGRADING](https://github.com/FortAwesome/vue-fontawesome/blob/master/UPGRADING.md) guide and use current version of README docs
-
-General differences:
-- Fontawesome now has no default imports, you have to specify `icons: ['fas']` to import whole set.
-- Packages changed. You'll need to update your package.json file with the renamed packages and new versions.
-- Improved tree shaking support, no need to setup it with build and `shakable.es.js'`, so remove this block
-
 ## Setup
 - Add dependencies using npm to your project <br/>
 `npm i nuxt-fontawesome` <br/>
@@ -69,11 +61,18 @@ Import icons/whole sets from chosen packages
 
 
 ## Usage
-Please see [vue-fontawesome](https://github.com/FortAwesome/vue-fontawesome) for additional reference
+You can find more details under `example` folder. Also please see [vue-fontawesome](https://github.com/FortAwesome/vue-fontawesome) for additional reference
 
 - Add needed dependency, like <br/>
 `npm i @fortawesome/free-solid-svg-icons`
 - Add configuration like this in `nuxt.config.js`
+
+Component names by default:
+- `<font-awesome-icon>`
+- `<font-awesome-layers>`
+- `<font-awesome-layers-text>`
+
+With `component` option set, `-layers` and `-layers-text` suffixes will be appended (see example below)
 ```js
 {
   fontawesome: {
@@ -94,8 +93,17 @@ Then use
 ```vue
 <template>
     <div>
-        <font-awesome-icon :icon="['fas', 'adjust']"  />
-        <font-awesome-icon icon="dollar-sign"  style="font-size: 30px"/>
+      <font-awesome-icon :icon="['fas', 'adjust']"  />
+      <font-awesome-icon icon="dollar-sign"  style="font-size: 30px"/>
+      <font-awesome-icon icon="cog"/>
+      <font-awesome-layers class="fa-4x">
+        <font-awesome-icon icon="circle"/>
+        <font-awesome-icon icon="check" transform="shrink-6" :style="{ color: 'white' }"/>
+      </font-awesome-layers>
+      <font-awesome-layers full-width class="fa-4x">
+        <font-awesome-icon icon="calendar"/>
+        <font-awesome-layers-text transform="shrink-8 down-3" value="27" class="fa-inverse" />
+      </font-awesome-layers>
     </div>
 </template>
 ```
@@ -110,6 +118,10 @@ fontawesome: {
 ```vue
 <template>
     <div>
+        <fa-layers full-width class="fa-4x">
+          <fa :icon="fas.faCircle"/>
+          <fa-layers-text transform="shrink-12" value="GALSD" class="fa-inverse" />
+        </fa-layers>
         <fa :icon="fas.faAddressBook"  />
         <fa :icon="faGithub" />
     </div>
@@ -127,7 +139,7 @@ fontawesome: {
       }
     },
   }
-  </script>
+</script>
 ```
 ## License
 MIT, made by [Galley Web Development](https://galley.online/)
