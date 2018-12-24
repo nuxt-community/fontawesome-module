@@ -1,25 +1,30 @@
 module.exports = {
     root: true,
     parserOptions: {
-        sourceType: 'module'
+        parser: 'babel-eslint'
     },
     env: {
         browser: true,
         node: true,
         jest: true
     },
-    extends: 'standard',
+    extends: [
+        'standard',
+        'plugin:vue/recommended'
+    ],
     plugins: [
         'jest',
         'vue'
     ],
     rules: {
+        'indent': 'off',
+        'vue/script-indent': ['warn', 2, {
+            'baseIndent': 1
+        }],
         // Allow paren-less arrow functions
         'arrow-parens': 0,
         // Allow async-await
         'generator-star-spacing': 0,
-        // Allow debugger during development
-        'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
         // Do not allow console.logs etc...
         'no-console': 2
     },
