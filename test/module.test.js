@@ -1,3 +1,5 @@
+const fs = require('fs')
+const path = require('path')
 const { Nuxt, Builder } = require('nuxt-edge')
 const request = require('request-promise-native')
 
@@ -20,8 +22,26 @@ describe('basic', () => {
     await nuxt.close()
   })
 
+  test('bundle size (tree shaking)', () => {
+    // fab ~460KB
+    // fas ~660KB
+    // make sure that fas is tree-shaked and not included completely
+    let maxSize = 0
+    const dirname = path.resolve(nuxt.options.buildDir, 'dist', 'client')
+    const files = fs.readdirSync(dirname)
+    for (const file of files) {
+      const stat = fs.statSync(path.resolve(dirname, file))
+      if (stat.size > maxSize) {
+        maxSize = stat.size
+      }
+    }
+
+    expect(maxSize).toBeGreaterThan(100000)
+    expect(maxSize).toBeLessThan(600000)
+  })
+
   test('render', async () => {
-    let html = await get('/')
+    const html = await get('/')
     expect(html).toContain('data-prefix="fas" data-icon="cog"')
     expect(html).toContain('data-prefix="fas" data-icon="check"')
     expect(html).toContain('data-prefix="fas" data-icon="circle"')

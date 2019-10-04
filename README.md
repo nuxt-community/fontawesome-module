@@ -2,7 +2,7 @@
 [![npm (scoped with tag)](https://img.shields.io/npm/v/nuxt-fontawesome/latest.svg?style=flat-square)](https://npmjs.com/package/nuxt-fontawesome)
 [![npm](https://img.shields.io/npm/dt/nuxt-fontawesome.svg?style=flat-square)](https://npmjs.com/package/nuxt-fontawesome)
 
-> Plugin to join nuxt and Font Awesome 5 icons using official [vue-fontawesome](https://github.com/FortAwesome/vue-fontawesome) plugin. 
+> Plugin to join nuxt and Font Awesome 5 icons using official [vue-fontawesome](https://github.com/FortAwesome/vue-fontawesome) plugin.
 Supports ES6 imports with tree shaking and fix of initial load flickering
 
 ## Setup
@@ -13,7 +13,7 @@ Also it may be needed to explicitly install fontawesome, if your webpack build f
 - Configure `nuxt.config.js`:
   - Add `nuxt-fontawesome` to `modules` section
   - Configure loaded icons/whole sets
-  
+
 - See more details about usage below
 ```js
 {
@@ -21,15 +21,15 @@ Also it may be needed to explicitly install fontawesome, if your webpack build f
     'nuxt-fontawesome',
     //OR like this
     ['nuxt-fontawesome', {
-      component: 'fa', 
+      component: 'fa',
       imports: [
         //import whole set
         {
           set: '@fortawesome/free-solid-svg-icons',
           icons: ['fas']
         },
-        //import 2 icons from set 
-        // please note this is PRO set in this example, 
+        //import 2 icons from set
+        // please note this is PRO set in this example,
         // you must have it in your node_modules to actually import
         {
           set: '@fortawesome/pro-regular-svg-icons',
@@ -58,6 +58,16 @@ Import icons/whole sets from chosen packages
 - Default: `[]`, no icons will be imported here (see below, can be loaded later inside .vue file)
   - `set` - path to node package for import, like `@fortawesome/free-solid-svg-icons`
   - `icons` - array of icons to import `['faAdjust', 'faArchive']`.
+
+### `addLayers`
+Whether to add the layers component. Name of the component will be the `component`-layers like
+`<fa-layers ... />`
+- Default: `true`
+
+### `addLayersText`
+Whether to add the layers-text component. Name of the component will be the `component`-layers-text like
+`<fa-layers-text ... />`
+- Default: `true`
 
 
 ## Usage
