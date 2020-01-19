@@ -39,7 +39,7 @@ yarn add @nuxtjs/fontawesome @fortawesome/free-solid-svg-icons @fortawesome/free
       }
     }]
   ],
-  //alternative place for config
+  // alternative place for config
   fontawesome: {
     icons: [
       ...
@@ -50,19 +50,19 @@ yarn add @nuxtjs/fontawesome @fortawesome/free-solid-svg-icons @fortawesome/free
 ## Module options
 
 ### `component`
+- Default: `font-awesome-icon`
 Change component name. For example, `fa` to use like
 `<fa ... />`
-- Default: `font-awesome-icon`
 
 ### `useLayers`
-Whether to add the layers component. Name of the component will be the `component`-layers like
-`<fa-layers ... />`
 - Default: `true`
+Whether to add the layers component. Name of the component will be `${options.component}-layers` like
+`<fa-layers ... />`
 
 ### `useLayersText`
-Whether to add the layers-text component. Name of the component will be the `component`-layers-text like
-`<fa-layers-text ... />`
 - Default: `true`
+Whether to add the layers-text component. Name of the component will be the `${options.component}-layers-text` like
+`<fa-layers-text ... />`
 
 ### `icons`
 
@@ -72,7 +72,7 @@ This option is an object with the style names as property and an array with all 
 
 ```js
   icons: {
-    solid: [ ... ],
+    solid: [ 'faHome', ... ],
     regular: [ ... ],
     light: [ ... ],
     duotone: [ ... ],
@@ -88,11 +88,11 @@ Although not recommended, you can use `true` to include the full icon set:
 ```
 
 ### `suffix`
-Boolean, default false
+- Default: `false`
 
-Whether to append `-icon` to the icon component name. This option exists as the component name option is also used for the layer components and you might not want to add '-icon' to those
+Boolean whether to append `-icon` to the icon component name. This option exists as the component name option is also used for the layer components and you might not want to add '-icon' to those
 
-```
+```js
   // config
   component: 'fa',
   suffix: true
@@ -102,7 +102,7 @@ Whether to append `-icon` to the icon component name. This option exists as the 
   <fa-layer />
 
 ```
-```
+```js
   // config
   component: 'fa-icon',
   suffix: false
@@ -112,12 +112,20 @@ Whether to append `-icon` to the icon component name. This option exists as the 
   <fa-icon-layer />
 ```
 
-### `imports` (deprecated)
+### `imports` _deprecated_
 Import icons/whole sets from chosen packages. This is the old configuration and will likely be removed in a future version. Use [`icons`](#icons) instead
 - Default: `[]`, no icons will be imported here (see below, can be loaded later inside .vue file)
   - `set` - path to node package for import, like `@fortawesome/free-solid-svg-icons`
   - `icons` - array of icons to import `['faAdjust', 'faArchive']`.
 
+```js
+  imports: [
+    {
+      set: '@fortawesome/free-solid-svg-icons',
+      icons: ['faHome']
+    }
+  ]
+```
 
 ## Usage
 You can find more details under `example` folder. Also please see [vue-fontawesome](https://github.com/FortAwesome/vue-fontawesome) for additional reference
@@ -200,7 +208,7 @@ export default {
 
 [MIT License](./LICENSE)
 
-This module was forked from the (font) awesome module create by @vaso2: https://github.com/vaso2/nuxt-fontawesome
+This module was forked from the (font) awesome module created by @vaso2: https://github.com/vaso2/nuxt-fontawesome
 
 Copyright (c) Nuxt Community
 
