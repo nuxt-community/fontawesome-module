@@ -62,13 +62,12 @@ Change component name. For example, `fa` to use like
 ### `useLayers`
 - Default: `true`
 
-Whether to add the layers component. Name of the component will be `${options.component}-layers` like
-`<fa-layers ... />`
+Boolean to indicate if the layers component should be registered globally. Name of the component will be `${options.component}-layers`, fe `<fa-layers ... />`
 
 ### `useLayersText`
 - Default: `true`
 
-Whether to add the layers-text component. Name of the component will be the `${options.component}-layers-text` like
+Boolean to indicate if the layers component should be registered globally. Name of the component will be the `${options.component}-layers-text`, fe
 `<fa-layers-text ... />`
 
 ### `icons`
