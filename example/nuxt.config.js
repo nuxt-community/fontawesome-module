@@ -15,7 +15,14 @@ module.exports = {
           set: '@fortawesome/free-solid-svg-icons',
           icons: ['faCog', 'faCalendar', 'faHome', 'faCircle', 'faCheck']
         }
-      ]
+      ],
+      icons: {
+        solid: true,
+        brands: [
+          'faNode',
+          'faVuejs'
+        ]
+      }
     }]
   ]
 }

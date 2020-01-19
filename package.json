@@ -1,51 +1,33 @@
 {
-  "name": "nuxt-fontawesome",
+  "name": "@nuxtjs/fontawesome",
   "version": "0.4.0",
   "description": "Module to join nuxt and Fontawesome 5",
+  "repository": "nuxt-community/fontawesome-module",
+  "license": "MIT",
+  "main": "lib/module.js",
   "keywords": [
     "vue",
     "nuxt",
-    "fontawesome",
-    "fontawesome 5"
-  ],
-  "license": "MIT",
-  "contributors": [
-    {
-      "name": "vaso2 <head@galley.online>"
-    }
-  ],
-  "main": "lib/module.js",
-  "publishConfig": {
-    "access": "public"
-  },
-  "scripts": {
-    "dev": "nuxt example",
-    "lint": "eslint lib test",
-    "test": "npm run lint && jest"
-  },
-  "eslintIgnore": [
-    "lib/templates/*.*"
+    "nuxt-module",
+    "fontawesome"
   ],
   "files": [
     "lib"
   ],
-  "jest": {
-    "testEnvironment": "node",
-    "collectCoverage": true
+  "scripts": {
+    "dev": "nuxt example",
+    "lint": "eslint --ext .js,.vue .",
+    "release": "yarn lint && yarn test && standard-version",
+    "test": "jest"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/vaso2/nuxt-fontawesome.git"
-  },
-  "bugs": {
-    "url": "https://github.com/vaso2/nuxt-fontawesome/issues"
-  },
-  "homepage": "https://github.com/vaso2/nuxt-fontawesome#readme",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.25",
     "@fortawesome/vue-fontawesome": "^0.1.7"
   },
   "devDependencies": {
+    "@fortawesome/free-brands-svg-icons": "^5.11.2",
+    "@fortawesome/free-solid-svg-icons": "^5.11.2",
+    "@nuxtjs/eslint-config": "^2.0.0",
     "babel-eslint": "latest",
     "codecov": "latest",
     "eslint": "latest",
@@ -59,8 +41,9 @@
     "jest": "latest",
     "jsdom": "latest",
     "nuxt-edge": "latest",
-    "standard-version": "latest",
-    "@fortawesome/free-solid-svg-icons": "^5.11.2",
-    "@fortawesome/free-brands-svg-icons": "^5.11.2"
+    "standard-version": "latest"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

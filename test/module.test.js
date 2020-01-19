@@ -37,7 +37,7 @@ describe('basic', () => {
     }
 
     expect(maxSize).toBeGreaterThan(100000)
-    expect(maxSize).toBeLessThan(600000)
+    expect(maxSize).toBeLessThan(700000)
   })
 
   test('render', async () => {
@@ -46,7 +46,10 @@ describe('basic', () => {
     expect(html).toContain('data-prefix="fas" data-icon="check"')
     expect(html).toContain('data-prefix="fas" data-icon="circle"')
     expect(html).toContain('data-prefix="fas" data-icon="calendar"')
+    expect(html).toContain('>27<')
     expect(html).toContain('fa-inverse fa-layers-text')
-    expect(html).toContain('data-prefix="fab" data-icon="github"')
+    expect(html).toContain('data-prefix="fab" data-icon="js"')
+    expect(html).toContain('data-prefix="fab" data-icon="node"')
+    expect(html).toContain('data-prefix="fab" data-icon="vuejs"')
   })
 })
