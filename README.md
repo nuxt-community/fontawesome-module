@@ -24,7 +24,18 @@ yarn add @nuxtjs/fontawesome @fortawesome/free-solid-svg-icons @fortawesome/free
 {
   buildModules: [
     '@nuxtjs/fontawesome',
-    // or like this
+  ],
+  // alternative place for config
+  fontawesome: {
+    icons: [
+      ...
+    ]
+  }
+}
+````
+or include the options in modules listing
+```js
+  buildModules: [
     ['@nuxtjs/fontawesome', {
       component: 'fa',
       suffix: true,
@@ -38,29 +49,25 @@ yarn add @nuxtjs/fontawesome @fortawesome/free-solid-svg-icons @fortawesome/free
         regular: true
       }
     }]
-  ],
-  // alternative place for config
-  fontawesome: {
-    icons: [
-      ...
-    ]
-  }
-}
-````
+  ]
+```
 ## Module options
 
 ### `component`
 - Default: `font-awesome-icon`
+
 Change component name. For example, `fa` to use like
 `<fa ... />`
 
 ### `useLayers`
 - Default: `true`
+
 Whether to add the layers component. Name of the component will be `${options.component}-layers` like
 `<fa-layers ... />`
 
 ### `useLayersText`
 - Default: `true`
+
 Whether to add the layers-text component. Name of the component will be the `${options.component}-layers-text` like
 `<fa-layers-text ... />`
 
