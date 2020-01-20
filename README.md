@@ -54,10 +54,11 @@ or include the options in modules listing
 ## Module options
 
 ### `component`
-- Default: `font-awesome-icon`
+- Default: `FontAwesomeIcon`
 
-Change component name. For example, `fa` to use like
-`<fa ... />`
+Change component name. Eg set to `fa` to use `<fa icon="" ... />`. Also see [suffix](#suffix)
+
+> It's strongly recommended to use [PascalCase](https://vuejs.org/v2/style-guide/#Component-name-casing-in-templates-strongly-recommended) for component names
 
 ### `useLayers`
 - Default: `true`
@@ -100,7 +101,7 @@ Boolean whether to append `-icon` to the icon component name. This option exists
 
 ```js
   // config
-  component: 'fa',
+  component: 'Fa',
   suffix: true
 
   // usage
@@ -110,12 +111,12 @@ Boolean whether to append `-icon` to the icon component name. This option exists
 ```
 ```js
   // config
-  component: 'fa-icon',
+  component: 'FaIcon',
   suffix: false
 
   // usage
   <fa-icon />
-  <fa-icon-layer />
+  <fa-icon-layers />
 ```
 
 ### `imports` _deprecated_
@@ -214,7 +215,7 @@ export default {
 
 [MIT License](./LICENSE)
 
-This module was forked from the (font) awesome module created by @vaso2: https://github.com/vaso2/nuxt-fontawesome
+This module was forked from the (font) awesome module created by [Galley Web Development](https://github.com/vaso2/nuxt-fontawesome)
 
 Copyright (c) Nuxt Community
 

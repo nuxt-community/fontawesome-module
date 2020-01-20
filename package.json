@@ -5,6 +5,9 @@
   "repository": "nuxt-community/fontawesome-module",
   "license": "MIT",
   "main": "lib/module.js",
+  "contributors": [
+    "vaso2 <head@galley.online>"
+  ],
   "keywords": [
     "vue",
     "nuxt",
