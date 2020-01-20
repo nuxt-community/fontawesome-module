@@ -229,11 +229,11 @@ Copyright (c) Nuxt Community
 [npm-downloads-src]: https://img.shields.io/npm/dt/@nuxtjs/fontawesome.svg?style=flat-square
 [npm-downloads-href]: https://npmjs.com/package/@nuxtjs/fontawesome
 
-[circle-ci-src]: https://img.shields.io/circleci/project/github/nuxt-community/fontawesome.svg?style=flat-square
-[circle-ci-href]: https://circleci.com/gh/nuxt-community/fontawesome
+[circle-ci-src]: https://img.shields.io/circleci/project/github/nuxt-community/fontawesome-module.svg?style=flat-square
+[circle-ci-href]: https://circleci.com/gh/nuxt-community/fontawesome-module
 
-[codecov-src]: https://img.shields.io/codecov/c/github/nuxt-community/fontawesome.svg?style=flat-square
-[codecov-href]: https://codecov.io/gh/nuxt-community/fontawesome
+[codecov-src]: https://img.shields.io/codecov/c/github/nuxt-community/fontawesome-module.svg?style=flat-square
+[codecov-href]: https://codecov.io/gh/nuxt-community/fontawesome-module
 
 [license-src]: https://img.shields.io/npm/l/@nuxtjs/fontawesome.svg?style=flat-square
 [license-href]: https://npmjs.com/package/@nuxtjs/fontawesome
