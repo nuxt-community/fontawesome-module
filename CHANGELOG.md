@@ -1,4 +1,13 @@
-# Change Log
+# Changelog
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+### [1.0.1](https://github.com/nuxt-community/fontawesome-module/compare/v1.0.0...v1.0.1) (2020-01-20)
+
+
+### Bug Fixes
+
+* always print icons ([83b2924](https://github.com/nuxt-community/fontawesome-module/commit/83b29245e40e71975397aa1189318c39c461824a))
 
 <a name="0.4.0"></a>
 ## 0.4.0 (2018-12-24)
