@@ -10,22 +10,24 @@
 
 ## Setup
 - Add dependency using npm to your project
-```
-yarn add @nuxtjs/fontawesome -D
+```bash
+$ yarn add @nuxtjs/fontawesome -D
+
 // or to also add the free icon packs
-yarn add @nuxtjs/fontawesome @fortawesome/free-solid-svg-icons @fortawesome/free-brands-svg-icons -D
+
+$ yarn add @nuxtjs/fontawesome @fortawesome/free-solid-svg-icons @fortawesome/free-brands-svg-icons -D
 ```
 
 - Add `@nuxtjs/fontawesome` to `buildModules` in your `nuxt.config`
 - Configure loaded icons/whole sets
 
-- See more details about usage below
+Use the 'fontawesome' key:
 ```js
-{
+  // nuxt.config.js
   buildModules: [
     '@nuxtjs/fontawesome',
   ],
-  // alternative place for config
+
   fontawesome: {
     icons: [
       ...
@@ -33,8 +35,9 @@ yarn add @nuxtjs/fontawesome @fortawesome/free-solid-svg-icons @fortawesome/free
   }
 }
 ````
-or include the options in modules listing
+or include the options in the modules listing
 ```js
+  // nuxt.config.js
   buildModules: [
     ['@nuxtjs/fontawesome', {
       component: 'fa',
@@ -148,7 +151,7 @@ Default component names are:
 
 With `component` option set, `-layers` and `-layers-text` suffixes will be appended (see example below)
 ```js
-// nuxt.config
+  // nuxt.config
   fontawesome: {
     icons: {
       solid: ['faHome'],
