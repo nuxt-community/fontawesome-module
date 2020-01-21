@@ -97,6 +97,11 @@ Although not recommended, you can use `true` to include the full icon set:
   }
 ```
 
+### `addCss`
+- Default: `true`
+
+If the module should automatically add the fontawesome styles to the global css config. It works by unshifting `@fortawesome/fontawesome-svg-core/styles.css` onto the nuxt.options.css property.
+
 ### `suffix`
 - Default: `false`
 
