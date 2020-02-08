@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/nuxt-community/fontawesome-module/compare/v1.0.1...v1.1.0) (2020-02-08)
+
+
+### Features
+
+* add proIcons config option for pro imports ([ae483be](https://github.com/nuxt-community/fontawesome-module/commit/ae483be1c44dcd9156092b358f286b16a2db4566))
+
+
+### Bug Fixes
+
+* only log deprecation warning in dev mode ([72c9170](https://github.com/nuxt-community/fontawesome-module/commit/72c9170301c4eea5d8259113227000672807ba07))
+
 ### [1.0.1](https://github.com/nuxt-community/fontawesome-module/compare/v1.0.0...v1.0.1) (2020-01-20)
 
 
