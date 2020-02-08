@@ -42,9 +42,9 @@ or include the options in the modules listing
     ['@nuxtjs/fontawesome', {
       component: 'fa',
       suffix: true,
-      icons: {
+      proIcons: { // if you have bought the Pro packages
         // list the icons you want to add, not listed icons will be tree-shaked
-        free: [
+        solid: [
           'faHome',
           'faHeart'
         ],
@@ -90,16 +90,17 @@ This option is an object with the style names as property and an array with all 
   }
 ```
 
-### `proIcons`
-
-See `icons` for how to use, but always uses pro imports.
-
 Although not recommended, you can use `true` to include the full icon set:
 ```js
   icons: {
     solid: true
   }
 ```
+
+### `proIcons`
+
+See [`icons`](#icons) for how to use, but always uses pro imports.
+
 
 ### `addCss`
 - Default: `true`
