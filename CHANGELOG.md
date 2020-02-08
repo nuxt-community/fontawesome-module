@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.1](https://github.com/nuxt-community/fontawesome-module/compare/v1.1.0...v1.1.1) (2020-02-08)
+
+
+### Bug Fixes
+
+* use unique imports ([e0a09dd](https://github.com/nuxt-community/fontawesome-module/commit/e0a09dd735d9052b0e5a96b421ac80cad52d6977))
+
 ## [1.1.0](https://github.com/nuxt-community/fontawesome-module/compare/v1.0.1...v1.1.0) (2020-02-08)
 
 
