@@ -76,7 +76,7 @@ Boolean to indicate if the layers component should be registered globally. Name 
 
 ### `icons`
 
-Which icons you will use. FontAwesome [currently](https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use) supports 5 icon styles of which 2 are freely available.
+Which icons you will use. FontAwesome [currently](https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use) supports 5 icon styles of which 3 are freely available (partially).
 
 This option is an object with the style names as property and an array with all icon names you wish to use from those styles
 
@@ -89,6 +89,10 @@ This option is an object with the style names as property and an array with all 
     brands: [ ...]
   }
 ```
+
+### `proIcons`
+
+See `icons` for how to use, but always uses pro imports.
 
 Although not recommended, you can use `true` to include the full icon set:
 ```js
