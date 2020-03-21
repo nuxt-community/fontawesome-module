@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.2](https://github.com/nuxt-community/fontawesome-module/compare/v1.1.1...v1.1.2) (2020-03-21)
+
+
+### Bug Fixes
+
+* set default component according to readme ([19559a5](https://github.com/nuxt-community/fontawesome-module/commit/19559a565cf323cfc77e52c58d959ef4f2e7bd76))
+
 ### [1.1.1](https://github.com/nuxt-community/fontawesome-module/compare/v1.1.0...v1.1.1) (2020-02-08)
 
 
