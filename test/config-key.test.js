@@ -4,7 +4,7 @@ const { Nuxt, Builder } = require('nuxt-edge')
 
 describe('basic', () => {
   let nuxt
-  const buildDir = resolve(__dirname, '.nuxt-pro')
+  const buildDir = resolve(__dirname, '.nuxt-key')
 
   beforeAll(async () => {
     const config = {
