@@ -30,7 +30,7 @@
   "devDependencies": {
     "@fortawesome/free-brands-svg-icons": "^5.12.1",
     "@fortawesome/free-solid-svg-icons": "^5.12.1",
-    "@nuxtjs/eslint-config": "^2.0.0",
+    "@nuxtjs/eslint-config": "^2.0.2",
     "babel-eslint": "latest",
     "codecov": "latest",
     "eslint": "latest",
