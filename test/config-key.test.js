@@ -12,16 +12,16 @@ describe('basic', () => {
       buildDir,
       srcDir: resolve(__dirname, '../example'),
       modules: [
-        ['@@', {
-          component: 'fa',
-          useLayers: false,
-          useLayersText: false,
-          proIcons: {
-            solid: true,
-            duotone: ['faCamera']
-          }
-        }]
-      ]
+        ['@@']
+      ],
+      fontawesome: {
+        useLayers: false,
+        useLayersText: false,
+        proIcons: {
+          solid: true,
+          duotone: ['faCamera']
+        }
+      }
     }
     config.dev = false
 
@@ -42,7 +42,7 @@ describe('basic', () => {
     expect(content).toContain('proFadFaCamera')
     expect(content).toContain('pro-solid-svg-icons')
     expect(content).toContain('pro-duotone-svg-icons')
-    expect(content).toContain("'fa'")
+    expect(content).toContain("'FontAwesomeIcon'")
 
     expect(content).not.toContain('free-solid-svg-icons')
     expect(content).not.toContain('FontAwesomeLayers')
