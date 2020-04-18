@@ -29,9 +29,10 @@ Use the 'fontawesome' key:
   ],
 
   fontawesome: {
-    icons: [
+    icons: {
+      solid: ['faCog', ...],
       ...
-    ]
+    }
   }
 }
 ````
