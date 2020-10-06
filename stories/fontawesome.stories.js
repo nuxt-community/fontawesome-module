@@ -19,7 +19,7 @@ const getLibIcons = (library) => {
 }
 
 export default {
-  title: 'Module/Font Awesome'
+  title: 'Modules/Font Awesome'
 }
 
 export const Icons = () => ({
