@@ -225,6 +225,13 @@ export default {
 </script>
 ```
 
+## Integrations
+### Storybook
+If you are fan of storybook this might be interesting for you, This module provides a story to list and search available icons of your project. You can see stories under `stories` directory. 
+If you are using [`@nuxtjs/storybook`](https://storybook.nuxtjs.org) you can see the fontawesome stories under `Modules` section in your storybook. By default Font Awesome story will shows in your storybook, you disable/hide the story using [Storybook's `modules` option](/options#modules)
+
+
+
 ## License
 
 [MIT License](./LICENSE)
