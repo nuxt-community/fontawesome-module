@@ -19,15 +19,36 @@ const getLibIcons = (library) => {
 }
 
 export default {
-  title: 'Modules/Font Awesome'
+  title: 'Modules/Font Awesome',
+  argTypes: {
+    size: {
+      name: 'Icons Size',
+      control: { type: 'select', options: ['fa-1x', 'fa-2x', 'fa-3x', 'fa-4x', 'fa-5x'] }
+    },
+    onClick: { action: 'clicked' }
+  }
 }
 
 export const Icons = () => ({
+  props: {
+    size: {
+      type: String,
+      default: 'fa-2x'
+    },
+    onClick: {
+      type: Function,
+      default: () => () => {}
+    }
+  },
   components: { IconsList },
   data () {
     return {
       icons: getLibIcons(library)
     }
   },
-  template: '<IconsList :icons="icons" />'
+  template: '<IconsList :icons="icons" :size="size" :onClick="onClick" />'
 })
+
+Icons.args = {
+  size: 'fa-2x'
+}
