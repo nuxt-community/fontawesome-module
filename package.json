@@ -5,6 +5,7 @@
   "repository": "nuxt-community/fontawesome-module",
   "license": "MIT",
   "main": "lib/module.js",
+  "types": "types/index.d.ts",
   "contributors": [
     "vaso2 <head@galley.online>"
   ],
