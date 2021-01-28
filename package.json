@@ -15,7 +15,8 @@
     "fontawesome"
   ],
   "files": [
-    "lib"
+    "lib",
+    "stories"
   ],
   "scripts": {
     "dev": "nuxt example",
