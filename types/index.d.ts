@@ -1,5 +1,5 @@
-declare module "@nuxtjs/fontawesome" {
-    interface NuxtFontawesomeOptions {
+declare module '@nuxt/types' {
+    interface NuxtConfig {
         /**
          * Default: `"FontAwesomeIcon"`  
          * Change component name. Eg set to fa to use <fa icon="" ... />.  
